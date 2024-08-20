@@ -9,7 +9,7 @@ WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && \
-    apt-get install -y postgresql-client libpq-dev postgresql-contrib
+    apt-get install -y postgresql-client libpq-dev postgresql-contrib libjpeg-dev
 
 # Copy only the requirements.in and .env.local files into the container
 COPY requirements.in /app/
